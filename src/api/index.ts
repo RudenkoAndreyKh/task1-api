@@ -1,6 +1,7 @@
 import { Router } from "express";
 import auth from "./auth/auth.routes";
 import users from './user/user.routes';
+import games from './game/game.routes';
 
 const router: Router = Router();
 
@@ -9,5 +10,6 @@ const router: Router = Router();
 // });
 router.use("/authentication", auth);
 router.use("/users", users);
+router.use("/games", games);
 
 export default router;
